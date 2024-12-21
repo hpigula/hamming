@@ -12,7 +12,7 @@ public class KodHammingaPigulaHoracy122696 {
         int choice = -1; // Variable to store user's menu choice, initialized to an invalid value
 
         // Loop to keep prompting the user until a valid choice is entered
-        while (choice < 1 || choice > 3) {
+        while (choice < 1 || choice > 2) {
             System.out.print("Choose (1.Decoder or 2 Encoder): "); // Prompts user to choose an option
             String input = scanner.nextLine().trim(); // Reads and trims user input
 
