@@ -4,16 +4,16 @@ import java.util.Scanner; // Imports the Scanner class for user input
 
 public class KodHammingaPigulaHoracy122696 {
     public static void main() { // Main method, entry point of the program
-        // Prints program details and usage instructions in Polish
-        System.out.println("Horacy Piguła, Indeks 122696, Grupa 5, SAN Łódź, Polska, kod Hamminga - dekoder i koder");
-        System.out.println("Jest to program do kodowania i dekodowania kodu Hamminga. \nDo wyboru są opcje:\n 1. Dekodowanie Kodu Hamminga \n 2. Kodowanie Hamminga \n 3. Wyjście z aplikacji");
 
+        System.out.println("Horacy Piguła, Indeks 122696, Grupa 5, SAN Łódź, Polska, kod Hamminga - dekoder i koder");
+
+        System.out.println("Code of this app is also available on GitHub: https://github.com/hpigula/hamming.git");
         Scanner scanner = new Scanner(System.in); // Creates a Scanner instance for reading user input
         int choice = -1; // Variable to store user's menu choice, initialized to an invalid value
 
         // Loop to keep prompting the user until a valid choice is entered
         while (choice < 1 || choice > 3) {
-            System.out.print("Wybierz opcję (1, 2, lub 3): "); // Prompts user to choose an option
+            System.out.print("Choose (1.Decoder or 2 Encoder): "); // Prompts user to choose an option
             String input = scanner.nextLine().trim(); // Reads and trims user input
 
             try {
@@ -35,12 +35,12 @@ public class KodHammingaPigulaHoracy122696 {
 
                     default:
                         // If choice is invalid
-                        System.out.println("Zły wybór proszę wybrać jedną z opcji => 1, 2, lub 3.");
+                        System.out.println("Wrong choice! please choose from  1 or 2");
                         choice = -1; // Reset choice to force valid input
                 }
             } catch (NumberFormatException e) {
                 // Handle invalid input (e.g., letters, empty input)
-                System.out.println("Błędne dane wejściowe! Proszę wybrać 1, 2 lub 3.");
+                System.out.println("Wrong choice! please choose from  1 or 2");
             }
         }
     }
